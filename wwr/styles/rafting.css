@@ -1,0 +1,111 @@
+/* ===============================
+   Rafting Site Styles - rafting.css
+   Author: Angel Estuardo Jimenez Najera
+   =============================== */
+
+/* 🎨 Define CSS Variables */
+:root {
+  --primary-color: #4682b4;       /* azul acero pastel */
+  --secondary-color: #cceeff;     /* azul cielo claro */
+  --accent1-color: #000000;       /* texto negro */
+  --accent2-color: #fdfd96;       /* amarillo pastel suave */
+  --heading-font: "Times New Roman", "Georgia", serif;
+  --body-font: Arial, Helvetica, sans-serif;
+  --background-color: var(--secondary-color);
+}
+
+/* 🔄 Reset Box Model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🧍 Body Styling */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: var(--background-color);
+  font-size: 1rem;
+}
+
+/* 📐 Layout Width and Centering */
+header,
+main,
+footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+/* 🧭 Header Styling */
+header {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 16px;
+}
+
+/* 📝 Headings */
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: var(--accent1-color);
+}
+
+/* 📦 Basic Spacing */
+nav,
+p,
+section,
+article {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* 🔗 Remove Underlines from Social Media Links */
+.socialmedia a {
+  text-decoration: none;
+}
+
+/* 🖼️ Hero Section Styling */
+.hero {
+  position: relative;
+}
+
+/* 📷 Hero Image */
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 🏷️ Hero Heading Overlay */
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
+}
+
+/* 📄 Hero Article Overlay */
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 16px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 🖼️ Article Image Styling */
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 16px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
